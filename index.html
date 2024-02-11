@@ -13,7 +13,10 @@
 
     <label for="numer2">Ingresa Otro Número</label>
     <input type="number" id="numero2"> <br><br><br>
-    <button type="button" onclick="Suma()">Calcular</button>
+    <button type="button" onclick="Suma()">Suma</button>
+    <button type="button" onclick="Resta()">Resta</button>
+    <button type="button" onclick="Multiplicacion()">Multiplicación</button>
+    <button type="button" onclick="Division()">División</button>
     <br>
 
     <script>
@@ -28,6 +31,37 @@
             document.write("Sin Resultados Todavía.......");
             }
         }
+
+        function Resta (){
+            num1 = parseFloat(document.getElementById("numero1").value);
+            num2 = parseFloat(document.getElementById("numero2").value);
+            if (num1 != 0 && num2 != 0) {
+            document.write("La Suma Es: " + (num1-num2));
+            }else{
+            document.write("Sin Resultados Todavía.......");
+            }
+        }
+
+        function Division(){
+            num1 = parseFloat(document.getElementById("numero1").value);
+            num2 = parseFloat(document.getElementById("numero2").value);
+            if (num1 != 0 && num2 != 0) {
+            document.write("La Suma Es: " + (num1/num2));
+            }else{
+            document.write("Sin Resultados Todavía.......");
+            }
+        }
+
+        function Multiplicacion(){
+            num1 = parseFloat(document.getElementById("numero1").value);
+            num2 = parseFloat(document.getElementById("numero2").value);
+            if (num1 != 0 && num2 != 0) {
+            document.write("La Suma Es: " + (num1*num2));
+            }else{
+            document.write("Sin Resultados Todavía.......");
+            }
+        }
+
 
     </script>
 </body>
